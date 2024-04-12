@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+// Define the protobuf message for the response
+message ImageLabelResponse {
+  int32 iteration = 1;
+  bytes image_data = 2;
+  string ground_truth_label = 3;
+  string prediction_label = 4;
+}
+
+// Define the gRPC service
+service ImageLabelService {
+  // RPC method to get image prediction
+  rpc GetImagePrediction (ImageLabelRequest) returns (ImageLabelResponse);
+}
+
+// Define the protobuf message for the request
+message ImageLabelRequest {
+  int32 iteration = 1;
+}

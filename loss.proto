@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+// Define message types
+message LossRequest {
+    int32 iteration = 1;
+    // You can define any other fields needed for the request here
+}
+
+message LossResponse {
+    int32 iteration = 1;
+    float loss = 2;
+}
+
+// Define the service
+service TrainModel {
+    // Define RPC method for training model
+    rpc TrainModel(LossRequest) returns (LossResponse) {}
+}

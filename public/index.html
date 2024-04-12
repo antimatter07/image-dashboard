@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Classifier Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/socket.io/socket.io.js"></script> <!-- include socket.io library -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="fpsDisplay">FPS: <span id="fpsValue"></span></div>
+  <h2>Batch of images</h2>
+  <div id="imageContainer">
+    <div id="grid">
+      <div class="row">
+        <div class="imageCell">
+          <img class="gridImage" src="" alt="Predicted Image">
+        </div>
+        <div class="imageCell">
+          <img class="gridImage" src="" alt="Predicted Image">
+        </div>
+        <div class="imageCell">
+          <img class="gridImage" src="" alt="Predicted Image">
+        </div>
+        <div class="imageCell">
+          <img class="gridImage" src="" alt="Predicted Image">
+        </div>
+        <div class="imageCell">
+          <img class="gridImage" src="" alt="Predicted Image">
+        </div>
+        <div class="imageCell">
+          <img class="gridImage" src="" alt="Predicted Image">
+        </div>
+        <div class="imageCell">
+          <img class="gridImage" src="" alt="Predicted Image">
+        </div>
+        <div class="imageCell">
+          <img class="gridImage" src="" alt="Predicted Image">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="imageCell">
+          <img class="gridImage" src="" alt="Predicted Image">
+        </div>
+        <div class="imageCell">
+          <img class="gridImage" src="" alt="Predicted Image">
+        </div>
+        <div class="imageCell">
+          <img class="gridImage" src="" alt="Predicted Image">
+        </div>
+        <div class="imageCell">
+          <img class="gridImage" src="" alt="Predicted Image">
+        </div>
+        <div class="imageCell">
+          <img class="gridImage" src="" alt="Predicted Image">
+        </div>
+        <div class="imageCell">
+          <img class="gridImage" src="" alt="Predicted Image">
+        </div>
+        <div class="imageCell">
+          <img class="gridImage" src="" alt="Predicted Image">
+        </div>
+        <div class="imageCell">
+          <img class="gridImage" src="" alt="Predicted Image">
+        </div>
+      </div>
+      </div>
+      </div>
+
+  <h2>Predictions</h2>
+    <div id="grid">
+      <div class="row">
+        <div class="predCell">
+          placeholder 
+        </div>
+        <div class="predCell">
+          place
+        </div>
+        <div class="predCell">
+          place
+        </div>
+        <div class="predCell">
+        </div>
+        <div class="predCell">
+        </div>
+        <div class="predCell">
+        </div>
+        <div class="predCell">
+        </div>
+        <div class="predCell">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="predCell">
+        </div>
+        <div class="predCell">
+        </div>
+        <div class="predCell">
+        </div>
+        <div class="predCell">
+        </div>
+        <div class="predCell">
+        </div>
+        <div class="predCell">
+        </div>
+        <div class="predCell">
+        </div>
+        <div class="predCell">
+        </div>
+    </div>
+
+</div>
+
+  
+    <h2>Ground Truth</h2>
+<div id="grid">
+  <div class="row">
+    <div class="labelCell">
+    </div>
+    <div class="labelCell">
+    </div>
+    <div class="labelCell">
+    </div>
+    <div class="labelCell">
+    </div>
+    <div class="labelCell">
+    </div>
+    <div class="labelCell">
+    </div>
+    <div class="labelCell">
+    </div>
+    <div class="labelCell">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="labelCell">
+    </div>
+    <div class="labelCell">
+    </div>
+    <div class="labelCell">
+    </div>
+    <div class="labelCell">
+    </div>
+    <div class="labelCell">
+    </div>
+    <div class="labelCell">
+    </div>
+    <div class="labelCell">
+    </div>
+    <div class="labelCell">
+    </div>
+  </div>
+  </div>
+
+  <h2>Loss chart</h2>
+  <canvas id="lossChart"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
