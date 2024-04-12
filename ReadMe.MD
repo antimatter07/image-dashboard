@@ -1,6 +1,5 @@
 # Image Classification Training Dashboard
-Submitted to Dr. Neil Patrick Del Gallego
-STDISCM
+Submitted to Dr. Neil Patrick Del Gallego, in partial fulfillment of STDISCM (Disrtributed Computing)
 ## Dependencies
 - Node.js: for running the web app
 - Anaconda: for running the Jupyter notebook and gRPC server
